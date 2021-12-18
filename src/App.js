@@ -1,15 +1,24 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import Weather from "./Weather";
-import "./App.css";
-function App() {
+
+import "./styles.css";
+
+export default function App() {
   return (
     <div className="App">
-    <header className="App-header">
-      <h1>Hello friend</h1>
-      <Weather city="Berlin" />
-      </header>
+      <Weather />
+      <footer>
+        <a href="https://github.com/briology101/weather-react">
+          Open source code
+        </a>{" "}
+        by Bri Franz-Jonas
+      </footer>
     </div>
   );
 }
 
-export default App;
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+
+

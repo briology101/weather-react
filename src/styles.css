@@ -1,0 +1,117 @@
+body {
+    font-family: "Amatic SC", cursive;
+  }
+  
+  .container {
+    border-radius: 20px;
+    box-shadow: 2px 5px 8px 2px rgba(0, 0, 0, 0.61);
+    width: 1000px;
+    padding: 20px 30px;
+    margin: 30px auto;
+    background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+  }
+  
+  #beta {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 65px;
+    color: rgb(51, 139, 147);
+    display: inline;
+  }
+  
+  #city-search-input {
+    font-size: 25px;
+  }
+  
+  #details {
+    margin: 15px 0px;
+    padding: 0px;
+  }
+  
+  .form-group {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: left;
+  }
+  
+  #current-date-time {
+    font-size: 35px;
+    font-style: oblique;
+    text-align: right;
+    color: #b4f292;
+  }
+  
+  #entered-city {
+    text-align: center;
+    font-size: 50px;
+    color: #358d93;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  #temp-current {
+    font-size: 50px;
+    color: #358d93;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 34px;
+  }
+  
+  #temp-id {
+    text-align: center;
+  }
+  #icon-condition {
+    text-align: center;
+  }
+  
+  #conditions {
+    text-align: center;
+    font-size: 45px;
+    margin: 0 auto;
+    color: #358d93;
+  }
+  
+  #current-summary {
+    text-align: center;
+    font-size: 35px;
+    color: #358d93;
+  }
+  .card-body {
+    font-size: 28px;
+    border-radius: 20px;
+    display: inline;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .weather-forecast {
+    text-align: center;
+  }
+  .weather-forecast-date {
+    font-size: 35px;
+    color: rgb(51, 139, 147);
+  }
+  
+  .weather-forecast-temperatures {
+    font-size: 30px;
+    color: rgb(51, 139, 147);
+  }
+  
+  .weather-forecast-temperature-min {
+    opacity: 0.5;
+  }

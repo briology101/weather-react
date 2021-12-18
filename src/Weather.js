@@ -1,13 +1,70 @@
 import React from "react";
+// eslint-disable-next-line
 import axios from "axios";
+import "./styles.css";
 
-export default function Weather(props){
-    function handleResponse(response){
-        alert(`The weather in ${response.data.name} is ${response.data.main.temp}F`);
-    }
-    let apiKey = "a441b7070fa213c53c4879c1dcb43917";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=imperial`;
+export default function Weather() {
+  return (
+    <div className="app">
+      <div className="container">
+        <div className="card">
+          <div className="card-body">
+            <h1>Cicada Weather</h1>
+            <span className="badge bg-primary" id="beta">
+              BETA
+            </span>
+          </div>
+        </div>
 
-    axios.get(apiUrl).then(handleResponse);
-    return<h2>Hello boop</h2>
+        <div className="row" id="details">
+          <div className="col-7" id="search">
+            <form id="city-search">
+              <div className="form-group">
+                <input
+                  type="text"
+                  className="form-control"
+                  id="city-search-input"
+                  placeholder="Enter City"
+                />
+                <button type="submit" value="search">
+                  Search
+                </button>
+                <button id="current-location">Current Location</button>
+              </div>
+            </form>
+          </div>
+
+          <div className="col-4" id="current-date-time"></div>
+
+          <div className="card">
+            <div className="card-body">
+              <div className="row">
+                <div className="col-4">
+                  <div id="entered-city">Kalamazoo</div>
+                  <div id="temp-current">78°F</div>
+                </div>
+
+                <div className="col-4">
+                  <div id="icon-condition">
+                    <img src="" alt="" id="icon" className="float-left" />
+                    <br></br>
+                  </div>
+                  <div id="conditions">Cloudy</div>
+                </div>
+
+                <div className="col-4">
+                  <div id="current-summary">
+                    Feels Like: <span id="feels-like">78</span>°F<br></br>
+                    Humidity: <span id="humidity">75</span>%<br></br>
+                    Wind Speed: <span id="wind">5</span> mph<br></br>
+                    Wind Gusts: <span id="wind-gust">10</span> mph<br></br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
